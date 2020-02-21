@@ -1,0 +1,15 @@
+*{
+    font-family: arial;
+}
+
+article{
+    border: 1px solid peru;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+#first-article{
+    text-transform: uppercase;
+}
