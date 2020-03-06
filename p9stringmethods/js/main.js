@@ -123,7 +123,6 @@ s3 = s - side3n;
 areaT = s * s1 * s2 * s3;
 finalArea = Math.sqrt(areaT);
 
-console.log(s);
 console.log(`El área del triángulo es ${finalArea}`);
 
 if (side1 === side2 && side1 === side3 && side2 === side3){
@@ -134,3 +133,66 @@ if (side1 === side2 && side1 === side3 && side2 === side3){
     console.log("Este triángulo es escaleno"); 
  
 
+//EJERCICIO 5
+//Determinar si el triángulo es triángulo rectángulo
+
+//Algoritmo
+//Declarar la variable highNum
+//Declarar la variable minNum1, e inicializarlo con valor 0
+//Declarar la variable minNum2, e inicializarlo con valor 0
+//Declarar la variable minNum3, e inicializarlo con valor 0
+//Declarar la variable highNum2
+//Declarar la variable minNum1_2
+//Declarar la variable minNum2_2
+//Declarar la variable minNum3_2
+//Declarar la variable minNum
+//Si side1 es mayor que side2, y mayor que side3, este valor asignarlo a la variable highNum; si no, asignarlo a la variable minNum1
+//Si side2 es mayor que side1, y mayor que side3, este valor asignarlo a la variable highNum; si no, asignarlo a la variable minNum2
+//Si side3 es mayor que side2, mayor que side1, este valor asignarlo a la variable highNum; si no, asignarlo a la variable minNum3
+//Calcular el cuadrado de HighNum, y el resultado asignarlo a la variable HighNum2
+//Calcular el cuadrado de minNum1, y el resultado asignarlo a la variable minNum1_2
+//Calcular el cuadrado de minNum2, y el resultado asignarlo a la variable minNum2_2
+//Calcular el cuadrado de minNum3, y el resultado asignarlo a la variable minNum3_2
+//Sumar minNum1_2, minNum2_2 y minNum3_2, y el resultado asignarlo a la variable minNum
+//Si HighNum2 es igual a minNum, mostrar el mensaje "Es un tríangulo rectángulo", si no mostrar el mensaje "No es un triángulo rectángulo"
+    
+var highNum;
+var minNum1 = 0;
+var minNum2 = 0;
+var minNum3 = 0;
+var highNum2;
+var minNum1_2;
+var minNum2_2;
+var minNum3_2;
+var minNum;
+
+if(side1n > side2n && side1n > side3n){
+  highNum = side1n;
+}else{
+  minNum1 = side1n;
+}
+
+if (side2n > side1n && side2n > side3n){
+  highNum = side2n;
+}else{
+  minNum2 = side2n;
+}
+
+if (side3n > side1n && side3n > side2n){
+  highNum = side3n;
+}else{
+  minNum3 = side3n;
+}
+
+highNum2 = highNum * highNum;
+minNum1_2 = minNum1 * minNum1;
+minNum2_2 = minNum2 * minNum2;
+minNum3_2 = minNum3 * minNum3;
+
+minNum = minNum1_2 + minNum2_2 + minNum3_2;
+
+if(highNum2 == minNum){
+  console.log("Sí es tríangulo rectángulo")
+}else{
+  console.log("No es triángulo rectángulo")
+}
