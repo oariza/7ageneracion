@@ -109,7 +109,7 @@ console.log (`Hola, soy ${userName} y tengo ${userAge} años`)
 
 //Algoritmo
 //Declara la variable text y asignar un prompt para que el usuario visualice una pantalla con el siguiente mensaje en dentro de caja de texto "Cada estudiante tiene su ritmo, cada estudiante tiene su talento, y cada estudiante complementa al estudiante que tiene a su lado"
-//Declarar la variable countText, cuyo valor sea la extracción de las palabras "estudiante" dentro de la variable text, con ayuda del método match.
+//Declarar la variable countText, cuyo valor sea la extracción de la palabra "estudiante" dentro de la variable text, con ayuda del método match.
 //Muestra en un mensaje el siguiente texto "La palabra estudiante se repite {countText.length} veces", mostrando el largo de la variable countText
 //Declarar la variable replacedText, cuyo valor sea la variable text, y reemplazando las palabras "estudiante" por "Koder", con ayuda del método replace.
 //Mostrar el mensaje de la variable replacedText para mostrar el texto con los reemplazos
