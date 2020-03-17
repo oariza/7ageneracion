@@ -71,17 +71,20 @@ var bmentorsNames = [   
     "Israel Salinas",    
     "Carlos Ramos"]
   
+  var notArray = 123
+  
     
   //función que me permita ingresar el nombre de un array, y contar cuántos items tiene, si el array no existe, debe enviar un prompt que diga "tu array no existe"
-  const arrayCount = (array) => {
-    if (array.length >= 0 ){
-            console.log(`El array tiene ${array.length} items`)
-    }else if (typeof array != "number"){
-      console.log("tu array no existe");
+
+  const arrayCount = (array) =>{
+    if (Array.isArray(array)){
+      console.log(`El array tiene ${array.length} items`)
+    }else{
+      alert("tu array no existe");
     }
   }
-  
-  arrayCount(amentorsNames);
+
+  arrayCount(notArray);
   
   
   //función que reciba un array, e imprima los elementos de ese array en orden alfábetico y con la primer palabra en uppercase

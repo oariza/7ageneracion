@@ -22,6 +22,9 @@ const koder = () =>{
 
 }
 
+koder();
+console.log(koderObject);
+
 
 
 
