@@ -1,0 +1,11 @@
+
+
+@media only screen and (min-width: 520px ){
+    .section{
+        width: 49%;
+    }
+
+    aside{
+        width: 49%;
+    }
+}
