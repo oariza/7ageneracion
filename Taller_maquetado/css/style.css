@@ -1,0 +1,287 @@
+*{
+    font-family: 'Public Sans', sans-serif
+}
+
+#header{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hdr{
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.div{
+    width: 500px;
+    text-align: center;
+}
+
+.div a{
+    padding-right: 2%;
+}
+
+a{
+    color: rgb(177, 177, 177);
+}
+
+button{
+    background-image: linear-gradient(to right, #30D169 , #2BB9CD);
+    width: 170px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#intro{
+    background-color:  #FAFAFA;
+}
+
+.intro-title{
+    font-size: 39px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.intro-text{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    color: rgb(177, 177, 177);
+    line-height: 30px;
+}
+
+.phones-mobile{
+    position: absolute;
+    top: -100px; 
+    left: 30px;
+    right: auto;
+    height: 400px;      
+    
+}
+
+#cards{
+    background-color: #F4F5F7;
+}
+
+.principal-title{
+    font-size: 35px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.principal-text{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(177, 177, 177);
+    line-height: 30px;
+}
+
+.card-title{
+    font-size: 23px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.text-title{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(177, 177, 177);
+    line-height: 30px;
+}
+
+
+#articles{
+    background-color: #FAFAFA;
+}
+
+.article-main{
+    font-size: 33px;
+    text-align: center;
+}
+
+.img-fluid2 {
+    width: 95%;
+    height: 200px;
+}
+
+.article-author{
+    font-size: 11px;
+    color: rgb(177, 177, 177);
+}
+
+.article-title{
+    font-size: 17px;
+}
+
+.article-text{
+    font-size: 14px;
+    color: rgb(177, 177, 177);
+}
+
+.white-article{
+    background-color: white;
+}
+
+
+#footer{
+    background-color: #2D314E;
+}
+
+#img-intro-mobile{
+    background-image: url(/images/bg-intro-mobile.svg);
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: button;
+    background-position: right;
+}
+
+#footer a{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.copyrigth{
+    color: rgb(177, 177, 177);
+    font-size: 18px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 520px ){
+    .div{
+        width: 500px;
+        text-align: center;
+    }
+
+    .hdr{
+        background-color: white;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .div a{
+        padding-right: 5%;
+    }
+  
+    button{
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+  
+    .intro-title{
+        text-align: left;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .intro-text{
+        font-size: 19px;
+        font-weight: bold;
+        text-align: justify;
+        color: rgb(177, 177, 177);
+        line-height: 30px;
+    }
+
+    #img-intro{
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-size: 170%;
+        background-repeat: no-repeat;
+        background-position: button;
+        background-position: left;
+    }
+
+    .principal-title{
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    .principal-text{
+        font-size: 23px;
+        text-align: left;
+        color: rgb(177, 177, 177);
+        line-height: 30px;
+    }
+
+    .card-title{
+        font-size: 23px;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .text-title{
+        font-size: 15px;
+        text-align: left;
+        color: rgb(177, 177, 177);
+        line-height: 30px;
+    }
+
+    .img-fluid2 {
+        width: 90%;
+        height: 160px;
+    }
+
+    .article-main{
+        font-size: 33px;
+        text-align: left;
+    }
+
+    .article-author{
+        font-size: 11px;
+        color: rgb(177, 177, 177);
+    }
+    
+    .article-title{
+        font-size: 17px;
+    }
+    
+    .article-text{
+        font-size: 14px;
+        color: rgb(177, 177, 177);
+    }
+
+    #footer a{
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .copyrigth{
+        color: rgb(177, 177, 177);
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .phones{
+        position: absolute;
+        top: -150px; left: 110px;
+        height: 700px;  
+        z-index: 1;      
+        
+    }
+
+}
+
