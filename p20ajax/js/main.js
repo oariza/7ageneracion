@@ -36,22 +36,22 @@ const addProductToDB = (productObject) => { //se crea funcion que agregara el ob
 
 //GET
 //Pues el GET nos va a permitir obtener datos de nuestra BD remota (en este caso alojada en firebaseio.com)
-const getProducts = () => { //se crea funcion que obtendrá información de la BD
-    console.log("getting products") //probemos que funciona la función :)
+    const getProducts = () => { //se crea funcion que obtendrá información de la BD
+        console.log("getting products") //probemos que funciona la función :)
 
-    let xhttp = new XMLHttpRequest() //se crea una variable con la consulta XMLHTTP
+        let xhttp = new XMLHttpRequest() //se crea una variable con la consulta XMLHTTP
 
-    xhttp.onreadystatechange = function(){ //una funcion va a ejecutarse cada que cambie el readyState
-        if(this.readyState == 4 && this.status == 200){ //si readyState y status están OK...         
-            let response = JSON.parse(this.responseText) //se crea una variable que parsea respuesta
-            console.log(response) //nos manda la respuesta de la consulta (o sea sabremos si se mandó o no nuestro objeto)
-        } 
+        xhttp.onreadystatechange = function(){ //una funcion va a ejecutarse cada que cambie el readyState
+            if(this.readyState == 4 && this.status == 200){ //si readyState y status están OK...         
+                let response = JSON.parse(this.responseText) //se crea una variable que parsea respuesta
+                console.log(response) //nos manda la respuesta de la consulta (o sea sabremos si se mandó o no nuestro objeto)
+            } 
+        }
+
+        //open inicializa un nuevo requerimiento del metodo GET, a la url, asincrono
+        xhttp.open("GET","https://javascript-ajax-d0ce6.firebaseio.com/omar/products.json",true)
+        xhttp.send() //envia la solicitud al servidor.
     }
-
-    //open inicializa un nuevo requerimiento del metodo GET, a la url, asincrono
-    xhttp.open("GET","https://javascript-ajax-d0ce6.firebaseio.com/omar/products.json",true)
-    xhttp.send() //envia la solicitud al servidor.
-}
 
 
 // PUT

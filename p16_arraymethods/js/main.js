@@ -207,7 +207,7 @@ const products = [
     }
   ]
 
-/*
+
 
 //ARRAY.FILTER
 
@@ -227,7 +227,7 @@ products.filter ((product) => {
     return product.type === 'beer'&& product. price < 50
 })
 
-
+/*
 //ARRAY.MAP
 
 const divProduct = products.map((product)=>{
@@ -264,7 +264,7 @@ const stringProd = products.map ((product)=>{
 
 console.log(stringProd);
     
-*/
+
 
 
 const suma1 = products.reduce((accum, product)=>{
@@ -303,3 +303,4 @@ const chips = products.reduce((accum, product)=>{
         return accum;
 }, [])
 console.log(chips)
+*/
